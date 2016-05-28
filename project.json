@@ -1,0 +1,9 @@
+
+{
+  "name": "lambda101",
+  "description": "for practice",
+  "memory": 128,
+  "timeout": 5,
+  "defaultEnvironment": "dev",
+  "environment": {}
+}
