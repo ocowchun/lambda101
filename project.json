@@ -1,9 +1,13 @@
-
 {
-  "name": "lambda101",
-  "description": "for practice",
-  "memory": 128,
-  "timeout": 5,
-  "defaultEnvironment": "dev",
-  "environment": {}
+    "name": "lambda101",
+    "description": "for practice",
+    "memory": 128,
+    "timeout": 5,
+    "handler": "lib.handle",
+    "hooks": {
+        "build": "../../node_modules/.bin/webpack --config ../../webpack.config.js",
+        "clean": "rm -fr lib"
+    },
+    "defaultEnvironment": "dev",
+    "environment": {}
 }
